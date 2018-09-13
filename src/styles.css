@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+#main .carousel-inner img{
+  max-height: 70vh;
+  object-fit: cover;
+  object-position: 100%;
+  filter: grayscale(70%);
+  /* position: relative; */
+}
+
+#carousel {
+  position: relative;
+}
+
+#carousel .overlay {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+  height: 100%;
+}
+
+.btn-utn-magin-left{
+  margin-left: 10px;
+}
+
+.btn-utn-margin-right{
+  margin-right: 10px;
+}
+
+.btn-utn{
+  background-color: #ff9900;
+  /* margin-left: 20px; */
+}
+
+.text-utn{
+  color: #ff9900;
+}
+
+#footer {
+  background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+}
+
+#footer a{
+  color: white;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0px;
+  height: 110px;
+  width: 100%;
+}

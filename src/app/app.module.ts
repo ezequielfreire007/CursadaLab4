@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import { FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AdivinaElNumeroComponent } from './componentes/adivina-el-numero/adivina-el-numero.component';
 import { ListadoDeResultadosComponent } from './componentes/listado-de-resultados/listado-de-resultados.component';
@@ -40,7 +40,8 @@ import { RegistroComponent } from './componentes/registro/registro.component';
 import { MenuCardComponent } from './componentes/menu-card/menu-card.component';
 import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
 import { QuienSoyComponent } from './componentes/quien-soy/quien-soy.component';
-import { AnagramaComponent } from './componentes/anagrama/anagrama.component'
+import { AnagramaComponent } from './componentes/anagrama/anagrama.component';
+import { FooterComponent } from './componentes/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { AnagramaComponent } from './componentes/anagrama/anagrama.component'
     MenuCardComponent,
     CabeceraComponent,
     QuienSoyComponent,
-    AnagramaComponent
+    AnagramaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
