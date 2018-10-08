@@ -1,0 +1,19 @@
+<div class="tablero">
+    <div class="col">
+      <p>Nivel: {{nivelActual}}</p>
+      <p>tiempo: {{tiempo}}</p>
+    </div>
+    <div class="keyboard">
+      <div class="row">
+        <div class="key verde" [@sliderVerde]="statusVerde" (click)="click('verde')" data-key="84">t-1</div>
+      </div>
+      <div class="row">
+        <div class="key amarillo" [@sliderAmarillo]="statusAmarillo" (click)="click('amarillo')" data-key="70">f-2</div>
+        <div class="key">Simon <i>{{ nivelActual }}</i> </div>
+        <div class="key rojo" [@sliderRojo]="statusRojo"  (click)="click('rojo')" data-key="71">g-4</div>
+      </div>
+      <div class="row">
+        <div class="key azul" [@sliderAzul]="statusAzul" (click)="click('azul')" data-key="86">v-3</div>
+      </div>
+    </div>
+  </div>

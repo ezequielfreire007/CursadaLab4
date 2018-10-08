@@ -18,6 +18,7 @@ import { RegistroComponent } from '../componentes/registro/registro.component';
 import { MenuCardComponent } from '../componentes/menu-card/menu-card.component';
 import { CabeceraComponent } from '../componentes/cabecera/cabecera.component';
 import { QuienSoyComponent } from '../componentes/quien-soy/quien-soy.component';
+import { SimonComponent } from '../componentes/simon/simon.component';
 
 // declaro donde quiero que se dirija
 const MiRuteo = [
@@ -27,14 +28,17 @@ const MiRuteo = [
   {path: 'Registro' , component: RegistroComponent},
   {path: 'Principal' , component: PrincipalComponent},
   {path: 'Listado' , component: ListadoComponent},
+  {path: 'Simon', component: SimonComponent},
   { path: 'Juegos' ,
     component: JuegosComponent ,
     children:
-        [{path: '' , component: MenuCardComponent},
-        {path: 'Adivina' , component: AdivinaElNumeroComponent},
+        [ {path: '' , component: MenuCardComponent},
+          {path: 'Adivina' , component: AdivinaElNumeroComponent},
           {path: 'AdivinaMasListado' , component: AdivinaMasListadoComponent},
           {path: 'AgilidadaMasListado' , component: AgilidadMasListadoComponent},
-          {path: 'Agilidad' , component: AgilidadAritmeticaComponent}]
+          {path: 'Agilidad' , component: AgilidadAritmeticaComponent}
+          // {path: 'Simon', component: SimonComponent}
+        ]
   },
   {path: '**' , component: ErrorComponent},
   {path: 'error' , component: ErrorComponent}

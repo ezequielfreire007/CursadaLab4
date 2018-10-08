@@ -2,41 +2,56 @@
 
 <!-- main -->
 
-<main id="main">
-    <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-70" src="../../../assets/img/dados_opt.png" alt="Hawai 1">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-70" src="../../../assets/img/aritmetica_opt.png" alt="Hawai 2">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-70" src="../../../assets/img/papel-piedra-y-tijera_opt.jpg" alt="Hawai 3">
-            </div>
-            <!-- <div class="carousel-item">
-                <img class="d-block w-100" src="../../../assets/img/aritmetica.png" alt="Hawai 1">
-            </div> -->
-            <div class="overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 offset-md-6 text-right align-item-center">
-                            <h1 class="text-utn">Queres juegar?</h1>
-                            <p class="d-none d-md-block text-white">En este lugar de diversion encontraras varios juegos que te desafiaran constantemente. Si aun no estas registrado no esperes mas y unete a esta sensacion. Si ya lo hiciste ingresa y comienza a jugar no piedas tiempo.</p>
-                            <a routerLink="/QuienSoy" href="#" class="btn btn-outline-light">Quien Soy</a>
-                            <a href="https://github.com/ezequielfreire007/CursadaLab4" class="btn btn-utn">en GitHub esta el codigo <i class="fa fa-github"></i></a>
-                            <!-- <button type="button" class="btn btn-utn">Comprar Tickets</button> -->
-                        </div>
-                    </div>
-                </div>
+<section id="main">
+  <div id="carousel" class=" carousel slide" data-ride="carousel" data-pause="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img class="d-block w-100" src="./assets/img/dados_opt.png" alt="Juego 1">
+      </div>
+      <div class="carousel-item">
+          <img class="d-block w-100" src="./assets/img/aritmetica_opt.png" alt="Juego 2">
+      </div>
+      <div class="carousel-item">
+          <img class="d-block w-100" src="./assets/img/papel-piedra-y-tijera_opt.jpg" alt="Juego 3">
+      </div>
+
+      <div class="overlay" >
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-md-6 offset-md-6 text-right align-item-center">
+                    <h1 class="text-utn">Queres juegar?</h1>
+                    <p class="d-none d-md-block text-white">En este lugar de diversion encontraras varios juegos que te desafiaran constantemente. Si aun no estas registrado, no esperes mas y unete a esta sensacion. Si ya lo hiciste, ingresa y comienza a jugar. no pierdas tiempo!!!</p>
+                    <a routerLink="/QuienSoy" href="#" class="btn btn-outline-light">Quien Soy</a>
+                    <a href="https://github.com/ezequielfreire007/CursadaLab4" class="btn btn-utn">en GitHub esta el codigo <i class="fa fa-github"></i></a>
+                    <!-- <button type="button" class="btn btn-utn">Comprar Tickets</button> -->
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="se-trata container">
+    <div class="ml-2 mr-2 mb-2 mt-2">
+        <div class="row">
+            <!-- text-center centra el texto y text-uppercase lo pone en mayusculas -->
+            <div class="col-12 text-center text-uppercase">
+                <small>De que</small>
+                <h1>Se trata</h1>
             </div>
         </div>
+      <div class="row">
+        <div class="col-12">
+            <p class="card-text text-aling-center">Este trabajo practico se realizo para la materia de Laboratio 4 en el que se aplican conceptos de angular. El framwork que se utilizo para el backet es bootstrap 4.</p>
+        </div>
+      </div>
     </div>
-</main>
+</section>
 
 
 <!-- /main -->
 
-
-
 <app-footer></app-footer>
+
+

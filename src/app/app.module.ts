@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { AdivinaElNumeroComponent } from './componentes/adivina-el-numero/adivina-el-numero.component';
 import { ListadoDeResultadosComponent } from './componentes/listado-de-resultados/listado-de-resultados.component';
 import { LoginComponent } from './componentes/login/login.component';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 //  import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 // import { AccordionModule } from 'ngx-bootstrap';
@@ -42,6 +44,7 @@ import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
 import { QuienSoyComponent } from './componentes/quien-soy/quien-soy.component';
 import { AnagramaComponent } from './componentes/anagrama/anagrama.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { SimonComponent } from './componentes/simon/simon.component';
 
 @NgModule({
   declarations: [
@@ -63,10 +66,12 @@ import { FooterComponent } from './componentes/footer/footer.component';
     CabeceraComponent,
     QuienSoyComponent,
     AnagramaComponent,
-    FooterComponent
+    FooterComponent,
+    SimonComponent
   ],
   imports: [
     BrowserModule,
+
     FormsModule,
     RuteandoModule
 

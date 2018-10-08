@@ -9,7 +9,7 @@ import { JuegoAdivina } from '../../clases/juego-adivina';
 })
 export class AdivinaElNumeroComponent implements OnInit {
 
- @Output() enviarJuego: EventEmitter<any>= new EventEmitter<any>();
+ @Output() enviarJuego: EventEmitter<any> = new EventEmitter<any>();
 
   nuevoJuego: JuegoAdivina;
   Mensajes: string;
@@ -36,7 +36,7 @@ export class AdivinaElNumeroComponent implements OnInit {
       this.MostarMensaje('Sos un Genio!!!', true);
       this.nuevoJuego.numeroSecreto = 0;
 
-    }else {
+    } else {
 
       let mensaje: string;
       switch (this.contador) {
@@ -76,13 +76,13 @@ export class AdivinaElNumeroComponent implements OnInit {
     const x = document.getElementById('snackbar');
     if (ganador) {
         x.className = 'show Ganador';
-      }else {
+      } else {
         x.className = 'show Perdedor';
     }
 
     const modelo = this;
 
-    setTimeout(function(){
+    setTimeout(function() {
       x.className = x.className.replace('show', '');
       modelo.ocultarVerificar = false;
      }, 3000);

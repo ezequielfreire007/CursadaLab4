@@ -12,33 +12,57 @@
 </div> -->
 
 <!-- heder -->
- <header>
-  <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-          <a class="navbar-brand" href="#">
-              <img src="../../../assets/img/utn-logo.png" alt="UTN logo">
-               Hora del juego
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/img/utn-logo.png" alt="UTN logo">
+        Hora del juego
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <!-- margin right mr y margin left ml -->
-              <ul class="navbar-nav ml-auto ">
+    <div class="collapse navbar-collapse" id="navbar">
+      <!-- margin right mr y margin left ml -->
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item active ml-2 mr-2 mt-2 mb-2">
+          <a  class=" btn btn-outline-light col-12" href="#" data-toggle="modal" data-target="#modalRegistro">Registrase</a>
+        </li>
+        <li class="nav-item active ml-2 mr-2 mt-2 mb-2">
+          <a  class=" btn btn-utn col-12 " href="" data-toggle="modal" data-target="#modalLogin">Ingresar</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-                <li class="nav-item active">
-                  <a routerLink="/Registro" class="nav-link btn btn-outline-light btn-utn-magin-left btn-utn-margin-right" href="#">Registrase</a>
-                </li>
-                <li class="nav-item">
-                  <a routerLink="/Login" class="nav-link btn btn-utn btn-md-12 btn-utn-magin-left btn-utn-margin-right" href="#">Ingresar</a>
-                </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-</header>
+
+<!-- modal -->
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <!-- <form action="">
+
+      </form> -->
+    <div class="modal-content">
+        <app-login></app-login>
+    </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+
+    <div class="modal-content">
+        <app-registro></app-registro>
+    </div>
+    </div>
+</div>
+<!-- /modal -->
+
+
 
 
  <!-- <header class="letraBaloo">

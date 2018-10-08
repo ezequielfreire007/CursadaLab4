@@ -22,7 +22,7 @@ export class JuegoServiceService {
   public listarPromesa(): Promise<Array<Juego>> {
     const promesa: Promise<Array<Juego>> = new Promise((resolve, reject) => {
       const miArray: Array<Juego> = new Array<Juego>();
-      miArray.push(new JuegoAdivina('JuegoPromesa 1', false, 'promesa'));
+      miArray.push(new JuegoAdivina('JuegoPromesa 1', false));
       miArray.push(new JuegoAdivina('PepePromesa', true));
       miArray.push(new JuegoAdivina('JuegoPromesa 3', false));
       miArray.push(new JuegoAdivina('JuegoPromesa 4', false));

@@ -3,9 +3,9 @@
     <button (click)="Juego('Adivina')">Adivina</button>
     <button (click)="Juego('Agilidad')">Agilidad</button>
     <button (click)="Juego('AdivinaMasListado')">Adivina+listado</button>
-    <button (click)="Juego('AgilidadaMasListado')">Agilidad+listado</button>  
+    <button (click)="Juego('AgilidadaMasListado')">Agilidad+listado</button>
     <button routerLink="/error">Error</button>
-  
+
 </div-->
 
 <!--nav class="navbar navbar-inverse">
@@ -26,12 +26,12 @@
         </ul>
     </div>
   </nav-->
-  <nav class="navbar navbar-inverse">
+  <!-- <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
-                                  
+
           </button>
           <a class="navbar-brand" routerLink="/Principal">Inicio</a>
         </div>
@@ -49,6 +49,39 @@
                 </ul>
         </div>
       </div>
-    </nav>
-      
-   
+    </nav> -->
+
+<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/img/utn-logo.png" alt="UTN logo">
+        Hora del juego
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   <!-- <a class="navbar-brand" routerLink="/Principal">Inicio</a>-->
+
+   <div class="collapse navbar-collapse" id="navbar">
+    <!-- margin right mr y margin left ml -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <!-- los href con # son para navegacion interna del sitio -->
+            <a class="nav-link" (click)="Juego('Adivina')">Adivina</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" (click)="Juego('Agilidad')">Agilidad</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" (click)="Juego('AdivinaMasListado')">Adivina+listado</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" (click)="Juego('AgilidadaMasListado')">Agilidad+listado</a>
+        </li>
+
+      </ul>
+    </div>
+  </div >
+</nav>
+
+

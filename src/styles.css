@@ -1,10 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+/* fuentes globales */
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+/* font-family: 'Merienda', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+/* font-family: 'Permanent Marker', cursive; */
+
+
+/* estilo global de la pagina */
+#header img{
+  width: 80px;
+}
+
+.fuente {
+  font-family: 'Permanent Marker', cursive !important;
+}
+
 #main .carousel-inner img{
   max-height: 70vh;
   object-fit: cover;
-  object-position: 100%;
   filter: grayscale(70%);
-  /* position: relative; */
 }
 
 #carousel {
@@ -12,12 +26,13 @@
 }
 
 #carousel .overlay {
-  position: absolute !important;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  color:white;
 }
 
 #carousel .overlay .container,
@@ -25,6 +40,7 @@
   height: 100%;
 }
 
+/* Botones  */
 .btn-utn-magin-left{
   margin-left: 10px;
 }
@@ -35,12 +51,30 @@
 
 .btn-utn{
   background-color: #ff9900;
-  /* margin-left: 20px; */
+  color: white;
+}
+.btn-utn:hover {
+  background-color: #f1ae1cf1;
 }
 
 .text-utn{
   color: #ff9900;
 }
+
+/* Formularios */
+.formulario-utn{
+  background-color: cadetblue;
+  /* font-family: 'Merienda', cursive; */
+  width: 100%;
+  height: 100%;
+}
+
+/* .fondo-login{
+  position: absolute;
+  background-color: rgba(9, 92, 92, 0.479);
+  width: 100%;
+  height: 100%;
+} */
 
 #footer {
   background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
@@ -50,9 +84,10 @@
   color: white;
 }
 
-.footer{
-  position: absolute;
+ .footer{
+  position: relative;
   bottom: 0px;
-  height: 110px;
   width: 100%;
 }
+
+

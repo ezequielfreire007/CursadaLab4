@@ -1,10 +1,14 @@
+import { Jugador } from './jugador';
+
 export abstract class Juego {
 
+  // Atributos
   public nombre = 'Sin Nombre';
-  public jugador: string;
+  public jugador: Jugador;
   public gano = false;
 
-  constructor(nombre?: string, gano?: boolean, jugador?: string) {
+  // Constructor
+  constructor(nombre?: string, gano?: boolean, jugador?: Jugador) {
     if (nombre) {
       this.nombre = nombre;
     }
@@ -13,13 +17,15 @@ export abstract class Juego {
     }
     if (jugador) {
       this.jugador = jugador;
-    }else {
-      this.jugador = 'natalia natalia';
+    } else {
+      this.jugador.nombre = 'Jhon Doe';
     }
   }
 
+  // Metodos abstractos
   public abstract verificar(): boolean;
 
+  // Metodos publicos
   public retornarAyuda() {
     return 'NO hay Ayuda definida';
   }

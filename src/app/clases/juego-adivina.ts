@@ -1,4 +1,5 @@
 import { Juego } from '../clases/juego';
+import { Jugador } from '../clases/jugador';
 /**
  * Juego adivina el Numero
  * la amquina genera un numero secreto ramdom entre 0 y 100.
@@ -9,7 +10,7 @@ export class JuegoAdivina extends  Juego {
     numeroSecreto = 0;
     numeroIngresado = 0;
 
-    constructor(nombre?: string, gano?: boolean, jugador?: string) {
+    constructor(nombre?: string, gano?: boolean, jugador?: Jugador) {
         super('Adivina el número', gano, jugador);
     }
 
@@ -23,11 +24,13 @@ export class JuegoAdivina extends  Juego {
           return false;
         }
      }
+
      public generarnumero() {
         this.numeroSecreto = Math.floor((Math.random() * 100) + 1);
         console.log('numero Secreto:' + this.numeroSecreto);
         this.gano = false;
       }
+
       public retornarAyuda() {
         if (this.numeroIngresado < this.numeroSecreto) {
           return 'Falta';
