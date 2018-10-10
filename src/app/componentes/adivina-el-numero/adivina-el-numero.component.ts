@@ -29,7 +29,9 @@ export class AdivinaElNumeroComponent implements OnInit {
   verificar() {
     this.contador++;
     this.ocultarVerificar = true;
-    console.log('numero Secreto:', this.nuevoJuego.gano);
+    console.log('numero Secreto:', this.nuevoJuego.numeroIngresado);
+    console.log('numero Secreto:', this.nuevoJuego.numeroSecreto);
+    console.log(`gano: ${this.nuevoJuego.verificar()}`);
     if (this.nuevoJuego.verificar()) {
 
       this.enviarJuego.emit(this.nuevoJuego);

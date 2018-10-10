@@ -1,12 +1,12 @@
 export class Jugador {
 
   id: number;
-  nombre: string;
-  apellido: string;
-  email: string;
-  clave: string;
+  public nombre: string;
+  public apellido: string;
+  public email: string;
+  public clave: string;
 
-  constructor ( nombre, apellido, email, clave, id?: number) {
+  constructor (id?: number, nombre?: string, apellido?: string, email?: string, clave?: string) {
     this.id = id;
     this.nombre = nombre;
     this.apellido = apellido;

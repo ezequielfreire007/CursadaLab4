@@ -7,7 +7,7 @@ export class JuegoAgilidad extends Juego {
   numeroIngresado: number;
   resultado: number;
 
-  constructor(numeroIngresado: number, gano?: boolean, jugador?: Jugador) {
+  constructor(numeroIngresado?: number, gano?: boolean, jugador?: Jugador) {
     super('Agilidad mental', gano, jugador);
     this.numeroIngresado = numeroIngresado;
     // this.numero1 = ;

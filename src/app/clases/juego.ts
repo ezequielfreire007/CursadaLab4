@@ -18,6 +18,7 @@ export abstract class Juego {
     if (jugador) {
       this.jugador = jugador;
     } else {
+      this.jugador = new Jugador();
       this.jugador.nombre = 'Jhon Doe';
     }
   }
