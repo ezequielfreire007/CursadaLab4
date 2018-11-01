@@ -2,6 +2,7 @@ import { Juego } from '../clases/juego';
 import { Jugador } from '../clases/jugador';
 
 export class JuegoAgilidad extends Juego {
+
   numero1 = 0;
   numero2: any;
   numeroIngresado: number;
@@ -10,6 +11,7 @@ export class JuegoAgilidad extends Juego {
   constructor(numeroIngresado?: number, gano?: boolean, jugador?: Jugador) {
     super('Agilidad mental', gano, jugador);
     this.numeroIngresado = numeroIngresado;
+    this.randoNumber();
     // this.numero1 = ;
     // this.numero2 = numero2 !== 0 ? numero2 : 'numero distinto de cero';
   }
@@ -62,6 +64,11 @@ export class JuegoAgilidad extends Juego {
     } else {
       return false;
     }
+ }
+
+ public randoNumber() {
+   this.numero1 = Math.floor((Math.random() * 100) + 1);
+   this.numero2 = Math.floor((Math.random() * 100) + 1) ;
  }
 
 }

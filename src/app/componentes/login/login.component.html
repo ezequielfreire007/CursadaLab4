@@ -92,12 +92,12 @@
           <!-- Email -->
           <div class="form-row text-white">
               <label><b>Nombre</b></label>
-              <input type="text" class="form-control" placeholder="Nombre" name="email" required>
+              <input type="text" class="form-control" [(ngModel)]="usuario" placeholder="Nombre" name="usuario" required>
           </div>
           <!-- Email -->
           <div class="form-row text-white ">
               <label><b>Clave</b></label>
-              <input type="password" class="form-control" placeholder="Clave" name="email" required>
+              <input type="password" class="form-control" [(ngModel)]="clave" placeholder="Clave" name="calve" required>
           </div>
 
           <div class="form-row mb-3 mt-3">
@@ -105,7 +105,7 @@
           </div>
 
           <div class="form-row mb-3 mt-3">
-              <button routerLink="/Juegos" type="button" class="btn btn-utn mb-2">Ingresar</button>
+              <button type="button" class="btn btn-utn mb-2" (click)="Entrar()">Ingresar</button>
             <div class="row ">
 
             </div>

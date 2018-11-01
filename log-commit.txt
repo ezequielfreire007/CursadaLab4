@@ -1,0 +1,62 @@
+* 8ec8399 se modifica advina el numero para que interactue con clase jugador
+* e0ca5cb modificacion en proyecto
+* 37f41a4 modificaciones de estilos
+* 85408ac Add files via upload
+* 74f0580 Add files via upload
+* 988c3cb Add files via upload
+* 15c15ba Add files via upload
+* 2877e6e Update index.html
+* e12327b Add files via upload
+* 7effd15 Update index.html
+* 31f3b61 Add files via upload
+* 0e99752 Update README.md
+* 44e7497 Update index.html
+* 9ee037f Add files via upload
+* 37044b5 Update index.html
+* b1fc777 Add files via upload
+* 4b68b42 Add files via upload
+* 9bab9d2 Update index.html
+* b377242 Add files via upload
+* de1123d Update index.html
+* 370d694 Update index.html
+* cdd9c47 Add files via upload
+* 9147d0d Update index.html
+* 3c145a0 Add files via upload
+* 8fe9a58 Update README.md
+* aa06278 Update index.html
+* eb0ab7a docs
+* 5eae18e Add files via upload
+* c73976d Resto de la app
+* d7c2b7d Primer Commit
+* 49e67d0 Initial commit
+* 8ec8399 se modifica advina el numero para que interactue con clase jugador
+* e0ca5cb modificacion en proyecto
+* 37f41a4 modificaciones de estilos
+* 85408ac Add files via upload
+* 74f0580 Add files via upload
+* 988c3cb Add files via upload
+* 15c15ba Add files via upload
+* 2877e6e Update index.html
+* e12327b Add files via upload
+* 7effd15 Update index.html
+* 31f3b61 Add files via upload
+* 0e99752 Update README.md
+* 44e7497 Update index.html
+* 9ee037f Add files via upload
+* 37044b5 Update index.html
+* b1fc777 Add files via upload
+* 4b68b42 Add files via upload
+* 9bab9d2 Update index.html
+* b377242 Add files via upload
+* de1123d Update index.html
+* 370d694 Update index.html
+* cdd9c47 Add files via upload
+* 9147d0d Update index.html
+* 3c145a0 Add files via upload
+* 8fe9a58 Update README.md
+* aa06278 Update index.html
+* eb0ab7a docs
+* 5eae18e Add files via upload
+* c73976d Resto de la app
+* d7c2b7d Primer Commit
+* 49e67d0 Initial commit
